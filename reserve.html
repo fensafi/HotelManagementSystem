@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Hotel</title>
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a762ed1567.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Make the form scrollable */
+        #reservationForm {
+            max-height: 650px; /* Set a fixed height for the form */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Optional: make the form background more visible */
+            border-radius: 10px; /* Optional: add rounded corners */
+        }
+    </style>
+</head>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar_default">
+        <a class="navbar-brand" href="#" style="font-size: 40px;">City Hotel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservations.html">Reservation</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="paragraph" style="text-align: center; font-family: 'Times New Roman', Times, serif;">
+        <p>Please Fill This Form to Reserve Your Seat</p>
+    </section>
+
+    <!-- Scrollable form -->
+    <div class="container">
+        <form id="reservationForm" class="mx-auto">
+            <div class="form-group">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="eventType" class="form-label">Event Type</label>
+                <select class="form-control" id="eventType" required>
+                    <option value="">Select Event Type</option>
+                    <option value="Art Exhibition">Art Exhibition</option>
+                    <option value="Conference Event">Conference Event</option>
+                    <option value="Live Music">Live Music</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="eventId" class="form-label">Event ID</label>
+                <input type="text" class="form-control" id="eventId" required>
+            </div>
+            <div class="form-group">
+                <label for="companyName" class="form-label">Name of the Company</label>
+                <input type="text" class="form-control" id="companyName" required>
+            </div>
+            <div class="form-group">
+                <label for="eventDate" class="form-label">Event Date</label>
+                <input type="date" class="form-control" id="eventDate" required>
+            </div>
+            <div class="form-group">
+                <label for="eventTime" class="form-label">Event Time</label>
+                <input type="time" class="form-control" id="eventTime" required>
+            </div>
+            <h5>Payment Information</h5>
+            <div class="form-group">
+                <label for="cardholderName" class="form-label">Cardholder Name</label>
+                <input type="text" class="form-control" id="cardholderName" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber" class="form-label">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" maxlength="16" required>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="expiryDate" class="form-label">Expiration Date</label>
+                    <input type="month" class="form-control" id="expiryDate" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cvv" maxlength="3" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: rgb(88, 86, 86); border-color: rgb(88, 86, 86);">Book</button>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
